@@ -36,26 +36,5 @@ export const Badge = (props: Props) => {
     if (observer) observer.disconnect();
   });
 
-  return (
-    <span
-      class="w-full text-center px-[10px] pt-[6px] pb-[10px] m-auto text-[13px]"
-      style={{
-        color: props.poweredByTextColor ?? defaultTextColor,
-        'background-color': props.badgeBackgroundColor ?? '#ffffff',
-      }}
-    >
-      Powered by
-      <a
-        ref={liteBadge}
-        href={'https://flowiseai.com'}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="lite-badge"
-        id="lite-badge"
-        style={{ 'font-weight': 'bold', color: props.poweredByTextColor ?? defaultTextColor }}
-      >
-        <span> Flowise</span>
-      </a>
-    </span>
-  );
+  return ;
 };
